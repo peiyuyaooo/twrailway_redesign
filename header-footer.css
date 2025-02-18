@@ -1,0 +1,187 @@
+/* ------------------------ header -------------------------- */
+.header{
+    background-color: #1468C0;
+
+}
+
+.header-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 70px;
+
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.search-bar img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.search-bar input{
+    border-radius: 100px;
+    border: none;
+    width: 300px;
+    height: 40px;
+    padding: 0 12px;
+}
+
+.links-icon{
+    display: flex;
+    gap: 24px;
+}
+
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    padding: 0 16px;
+}
+
+.nav-links a:hover{
+    font-weight: bold;
+    color: #16181F;
+}
+
+.nav-links a::after {
+    content: "|";  
+    color: white;  
+    position: absolute;
+    right: -2px; 
+    font-weight: lighter;
+
+}
+
+.icons{
+    color: white;
+    display: flex;
+    gap: 16px; /* 增加 icon 之間的間距 */
+    align-items: center;
+}
+
+.icons i {
+    font-size: 24px;
+}
+
+.fas .fa-user{
+    background-color: #59AAFF;
+    width: 40px;
+    height: 40px;
+    padding: 8px 12px;
+}
+
+
+
+
+/* ---------------------- footer ----------------------- */
+.footer {
+    width: 100%;
+}
+
+.footer-container {
+    background-color: #D7DCEB;
+    display: flex;
+    padding: 24px 120px;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+
+
+
+
+.footer-app {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-download img {
+    width: 120px; /* 控制下載按鈕大小 */
+}
+
+.footer-download{
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    gap: 8px; /* 設定按鈕間距 */
+}
+
+.footer-info {
+    max-width: 400px; /* 限制最大寬度，避免文字過長 */
+}
+
+.footer-info h6 {
+    align-self: stretch;
+    color: var(--Bk-01, #16181F);
+
+    /* Text/semibold */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 150%; /* 30px */
+}
+
+.footer-info-text {
+    color: #16181F;
+    align-self: stretch;
+    /* Text/default */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+
+.footer-logo img {
+    width: 312px;
+    height: 40px;
+    aspect-ratio: 39/5;
+    margin-bottom: 8px;
+}
+
+.company-details p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    background-color: #16181F;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.footer-links li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: #CCE1FB;
+}
