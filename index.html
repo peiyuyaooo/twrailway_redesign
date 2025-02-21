@@ -34,12 +34,10 @@
                 <a href="#">行政相關</a>
                 <a href="#">招商資訊</a>
             </nav>
-
-<!--------------------------- icons --------------------------->
             <!-- fas = Font Awesome Solid -->
             <div class="icons">
                 <i class="fas fa-globe"></i>
-                <i class="fas fa-user"></i>
+                <i class="fa-solid fa-circle-user"></i>
             </div>
             </div>
             
@@ -75,29 +73,77 @@
 
 
 <!------------------------ timetable ---------------------------->
-    <div class="timetable-search">
-        <div class="timetable-search-title">
-            <ul>
-                <li><a href="">列車時刻查詢</a></li>
-                <li><a href="">列車即時進站查詢</a></li>
-                <li><a href="">臺鐵 / 高鐵轉乘查詢</a></li>
-            </ul>
+
+    <div class="search-section">
+        <div class="tabs">
+            <div class="tab active">列車時刻查詢</div>
+            <div class="tab">列車即時進站查詢</div>
+            <div class="tab">臺鐵／高鐵轉乘查詢</div>
         </div>
+        
+        <div class="search-form">
+            <div class="form-group">
+                <h6>出發火車站</h6>
+                <select class="dropdown-select">
+                    <option value="" disabled selected>1011 - 台北</option>
+                    <option>1001 - 基隆</option>
+                    <option>1002 - 三坑</option>
+                    <option>1003 - 八堵</option>
+                    <option>1004 - 七堵</option>
+                    <option>1005 - 百福</option>
+                    <option>1006 - 五堵</option>
+                    <option>1007 - 汐止</option>
+                    <option>1008 - 汐科</option>
+                    <option>1009 - 南港</option>
+                    <option>1010 - 松山</option>
+                    <option>1011 - 台北</option>
+                    <option>1012 - 萬華</option>
+                </select>
+            </div>
 
-        <div class="timetable-input">
-            
+            <i class="fa-solid fa-right-left"></i>
 
+            <div class="form-group">
+                <h6>抵達火車站</h6>
+                <select class="dropdown-select">
+                    <option value="" disabled selected>1009 - 南港</option>
+                    <option>1001 - 基隆</option>
+                    <option>1002 - 三坑</option>
+                    <option>1003 - 八堵</option>
+                    <option>1004 - 七堵</option>
+                    <option>1005 - 百福</option>
+                    <option>1006 - 五堵</option>
+                    <option>1007 - 汐止</option>
+                    <option>1008 - 汐科</option>
+                    <option>1009 - 南港</option>
+                    <option>1010 - 松山</option>
+                    <option>1011 - 台北</option>
+                    <option>1012 - 萬華</option>
+                </select>
+            </div>
 
+            <div class="form-group">
+                <h6>出發日期</h6>
+                <input type="date" class="date-input" placeholder="">
+            </div>
 
+            <div class="form-group">
+                <h6>出發時間</h6>
+                <input type="time" class="time-input" placeholder=" ">
+            </div>
 
-            <div class="search-btn">
-                <a href="#">查詢時刻</a>
-                <i class="fas fa-search"></i>
-            </div>    
+            <div class="form-group">
+                <h6>票種</h6>
+                <select class="ticket-type">
+                    <option value="" disabled selected>請選擇</option>
+                    <option>全票</option>
+                    <option>優待票</option>
+                    <option>學生票</option>
+                </select>
+            </div>
+
+            <button class="search-btn">查詢時刻</button>
         </div>
-
-        
-        
     </div>
 
     <!--------------------- carousel ---------------------------->
@@ -110,13 +156,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://images.unsplash.com/uploads/1413387158190559d80f7/6108b580?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style="height: 485px; object-fit: cover; width: 1200px;" alt="...">
+                <img src="https://tip-tr4cdn.cdn.hinet.net/tra-tip-web/tip/img/bb24e59b-82e9-414f-a24f-2176bcc3fe05/1903x764" class="d-block w-100" style="height: 485px; object-fit: cover; width: 1200px;" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style="height: 485px; object-fit: cover; width: 1200px;" alt="...">
+                <img src="https://www.railway.gov.tw/tra-tip-web/tip/file/f526a088-886a-4690-bc68-cc8ef4b76ed0" class="d-block w-100" style="height: 485px; object-fit: cover; width: 1200px;" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1535898331935-2d274aff0fbc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" style="height: 485px; object-fit: cover; width: 1200px;" alt="...">
+                <img src="https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/480586768_1038028615033192_6833341077563568626_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=-kYdbPQI9QEQ7kNvgEahuPG&_nc_oc=AdiKFfOda7U-hm_Da2Ue7Bb9_sJu85PXCuOLAK0dunPsqGwDCe4MuxB4NRvQCZCVT4g&_nc_zt=23&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=A5k-LwO40ODdWV-ixYiJKiS&oh=00_AYDc5k9WmcBXLypb2DB8UsLhsrNQbIT79Kp2fkPbsllZ4w&oe=67BB56F6" class="d-block w-100" style="height: 485px; object-fit: cover; width: 1200px;" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -134,7 +180,160 @@
     <!---------------------------------- quick-booking ------------------------------------->
 
     <div class="quick-booking">
-        先略過嘻嘻
+        
+        <div class="quick-booking-container">
+            <h1>快速訂票</h1>
+            
+            <div class="journey-header">
+              <button class="journey-type">連續雙點行程</button>
+              <button class="add-journey">
+                <i class="fa-solid fa-plus"></i>
+                <span>新增行程</span>
+              </button>
+            </div>
+        
+            <div class="journey-card">
+              <div class="journey-title">
+                <i class="fa-solid fa-ticket"></i>
+                <span>行程 1</span>
+              </div>
+        
+              <div class="form-ID-container">
+                <div class="form-ID">
+                    <label class="form-label">身分證字號</label>
+                    <input type="text" class="form-control" placeholder="A123456789" />
+                </div>
+                
+                <div class="train-number">
+                    <i class="fa-regular fa-square"></i>
+                    <span>已知列車車次</span>
+                  </div>
+              </div>
+        
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">出發</label>
+                  <input type="text" class="form-control" value="1020 - 板橋站" />
+                </div>
+                
+                <i class="fa-solid fa-right-left"></i>
+        
+                <div class="form-group">
+                  <label class="form-label">抵達</label>
+                  <input type="text" class="form-control" value="3300 - 臺中站" />
+                </div>
+              </div>
+        
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">日期</label>
+                  <input type="date" class="form-control" value="2025-03-03" />
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label">抵達</label>
+                  <input type="time" class="form-control" value="15:30" />
+                </div>
+        
+                <div class="form-group">
+                  <label class="form-label">票種</label>
+                  <input type="text" class="form-control" value="全票, 1張" readonly />
+                </div>
+              </div>
+        
+              <div class="form-group">
+                <label class="form-label">同班車換座</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="radio" name="seat-change-1" />
+                    <span>同意</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="radio" name="seat-change-1" />
+                    <span>不同意</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="journey-card">
+                <div class="journey-title">
+                  <i class="fa-solid fa-ticket"></i>
+                  <span>行程 2</span>
+                </div>
+          
+                <div class="form-ID-container">
+                    <div class="form-ID">
+                        <label class="form-label">身分證字號</label>
+                        <input type="text" class="form-control" placeholder="A123456789" />
+                    </div>
+                    
+                    <div class="train-number">
+                        <i class="fa-regular fa-square"></i>
+                        <span>已知列車車次</span>
+                      </div>
+                  </div>
+          
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">出發</label>
+                    <input type="text" class="form-control" value="1020 - 板橋站" />
+                  </div>
+                  
+                  <i class="fa-solid fa-right-left"></i>
+          
+                  <div class="form-group">
+                    <label class="form-label">抵達</label>
+                    <input type="text" class="form-control" value="3300 - 臺中站" />
+                  </div>
+                </div>
+          
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">日期</label>
+                    <input type="date" class="form-control" value="2025-03-03" />
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="form-label">抵達</label>
+                    <input type="time" class="form-control" value="15:30" />
+                  </div>
+          
+                  <div class="form-group">
+                    <label class="form-label">票種</label>
+                    <input type="text" class="form-control" value="全票, 1張" readonly />
+                  </div>
+                </div>
+          
+                <div class="form-group">
+                  <label class="form-label">同班車換座</label>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label">
+                      <input type="radio" name="seat-change-1" />
+                      <span>同意</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="radio" name="seat-change-1" />
+                      <span>不同意</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            <div class="search-button-container">
+                <button class="search-button">搜尋車票<i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+           
+
+            
+    </div>
     </div>
 
     <!------------------------------------ news ------------------------------------>
@@ -156,13 +355,27 @@
             <div class="news-sticky">
                 <h3>置頂消息</h3>
                 <ul class="news-list">
-                    <li class="news-item">
+                    <li class="news-item1">
                         <span class="date">2023/03/25</span>
-                        <h6>車廂寧靜宣導，共同維護乘車品質</h6>
+                        <div class="news-content">
+                            <h6>車廂寧靜宣導，共同維護乘車品質</h6>
+                        <div class="read-more">
+                            <a href="">閱讀</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        </div>
+                        
                     </li>
-                    <li class="news-item">
+                    <li class="news-item1">
                         <span class="date">2022/03/18</span>
-                        <h6>臺鐵緊急聯絡電話「1933」(僅限發現軌道、平交道、橋樑及隧道有障礙物通報專用)</h6>
+                        <div class="news-content">
+                            <h6>臺鐵緊急聯絡電話「1933」(僅限發現軌道、平交道、橋樑及隧道有障礙物通報專用)</h6>
+                        <div class="read-more">
+                            <a href="">閱讀</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
@@ -171,25 +384,61 @@
             <div class="news-announcement">
                 <h3>公告</h3>
                 <ul class="news-list">
-                    <li class="news-item">
+                    <li class="news-item2">
                         <span class="date">2025/02/11</span>
-                        <h6>本公司第4次公開評選「屏東火車站東側新街段三小段3地號等24筆土地都市更新事業」都市更新事業實施者案第2次變更或補充公告。</h6>
+                        <div class="news-content">
+                            <h6>本公司第4次公開評選「屏東火車站東側新街段三小段3地號等24筆土地都市更新事業」都市更新事業實施者案第2次變更或補充公告。</h6>
+                        <div class="read-more">
+                            <a href="">閱讀</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        </div>
+                        
                     </li>
-                    <li class="news-item">
+                    <li class="news-item2">
                         <span class="date">2025/02/11</span>
-                        <h6>光聚千塘串桃園 臺鐵「桃喜便當-台式打拋豬」獻禮台灣燈會</h6>
+                        <div class="news-content">
+                            <h6>光聚千塘串桃園 臺鐵「桃喜便當-台式打拋豬」獻禮台灣燈會</h6>
+                        <div class="read-more">
+                            <a href="">閱讀</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        </div>
+                        
                     </li>
-                    <li class="news-item">
+                    <li class="news-item2">
                         <span class="date">2025/02/10</span>
-                        <h6>2025台灣燈會挺棒球愛台灣 臺鐵商品GO GO購！</h6>
+                        <div class="news-content">
+                            <h6>2025台灣燈會挺棒球愛台灣 臺鐵商品GO GO購！</h6>
+                        <div class="read-more">
+                            <a href="">閱讀</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        </div>
+                        
                     </li>
-                    <li class="news-item">
+                    <li class="news-item2">
                         <span class="date">2025/02/07</span>
-                        <h6>臺鐵全新郵輪列車 「嬉遊內灣 共下來尞」 888暢遊新竹竹東內灣</h6>
+                        <div class="news-content">
+                            <h6>臺鐵全新郵輪列車 「嬉遊內灣 共下來尞」 888暢遊新竹竹東內灣</h6>
+                        <div class="read-more">
+                            <a href="">閱讀</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        </div>
+                        
                     </li>
-                    <li class="news-item">
+                    <li class="news-item2">
                         <span class="date">2025/02/07</span>
-                        <h6>「2025台灣燈會在桃園」活動 臺鐵公司加開列車</h6>
+                        <div class="news-content">
+                            <h6>「2025台灣燈會在桃園」活動 臺鐵公司加開列車</h6>
+                        <div class="read-more">
+                            <a href="">閱讀</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
