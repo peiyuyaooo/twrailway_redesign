@@ -4,20 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../twrailway_redesign/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <!----------------------- Process bar ------------------------->
-    <div class="process-container">
-        <div class="step-container">
-            <div class="step-number-container">
-                <div class="step-number">1</div>
-            </div>
-            <div class="step-title">選擇車票種類</div>
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
+    <script>
+        // 載入 header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.body.insertAdjacentHTML('afterbegin', data));
 
+        // 載入 footer（確保放在主要內容之後）
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.body.insertAdjacentHTML('beforeend', data));
+    </script>
+
+    <!----------------------- Process bar ------------------------->
+<div class="process-container">
+    <div class="step-container active">
+        <div class="step-number-container">
+            <div class="step-number">1</div>
+        </div>
+        <div class="step-title">選擇車票種類</div>
     </div>
+    <i class="fa-solid fa-chevron-right"></i>
+
+
+    <div class="step-container">
+        <div class="step-number-container">
+            <div class="step-number">2</div>
+        </div>
+        <div class="step-title">計畫您的旅程</div>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+
+
+    <div class="step-container">
+        <div class="step-number-container">
+            <div class="step-number">3</div>
+        </div>
+        <div class="step-title">選擇車次</div>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+
+
+    <div class="step-container">
+        <div class="step-number-container">
+            <div class="step-number">4</div>
+        </div>
+        <div class="step-title">購票明細</div>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+
+
+    <div class="step-container">
+        <div class="step-number-container">
+            <div class="step-number">5</div>
+        </div>
+        <div class="step-title">付款與取票方式</div>
+    </div>
+</div>
 
 
     <!------------------------ Main part -------------------------->

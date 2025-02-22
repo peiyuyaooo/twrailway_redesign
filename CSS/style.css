@@ -710,16 +710,59 @@ body{
 
 
 
-/* ----------------------------- Booking page ------------------------------- */
+/* ----------------------------- Booking page > Process section ------------------------------- */
 
 .process-container {
-}
-
-.step-container{
     display: flex;
+    padding: 24px 120px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: var(--Gray-25, #FDFDFD);
+    box-shadow: 0px 1px 3px 0px rgba(10, 13, 18, 0.10), 0px 1px 2px -1px rgba(10, 13, 18, 0.10);
 }
 
-.step-number-container{
+.step-container {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 8px;
+    color: #333; 
+}
+
+.step-number-container {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
     border-radius: 100px;
-    background-color: #CCE1FB;
+    border: 1px solid  #CCE1FB;
+}
+
+.step-number {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.step-title {
+    font-size: 14px;
+    white-space: nowrap; /* 防止標題換行 */
+}
+
+
+.step-container.active .step-number-container {
+    background: var(--Primary-02, #CCE1FB);
+}
+
+.process-container i.fa-solid.fa-chevron-right {
+    font-size: 12px; 
+    color: #16181F;
+    margin: 0 8px; 
+}
+.process-container .step-container:last-child + i {
+    display: none;
 }
