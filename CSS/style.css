@@ -753,6 +753,11 @@ body{
     white-space: nowrap; /* 防止標題換行 */
 }
 
+.step-title a{
+    text-decoration: none;
+    color: #333;
+}
+
 
 .step-container.active .step-number-container {
     background: var(--Primary-02, #CCE1FB);
@@ -767,7 +772,7 @@ body{
     display: none;
 }
 
-/* ------------------------ Main part -------------------------- */
+/* ----------------------------- Booking page > Main section ------------------------------- */
 
 .main-container{
     display: flex;
@@ -879,7 +884,38 @@ body{
     line-height: 150%; /* 30px */
 }
 
-.ticket-btn:hover{
-    background: var(--Primary-01, #1468C0);
-    color: white
+
+.ticketCard-container a{
+    color:#16181F;
+    text-decoration: none;
+    display: flex;
+    height: 44px;
+    padding: 8px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: var(--Primary-02, #9EDCF6);
 }
+
+.ticketCard-container a:hover{
+    background-color: #1468C0;
+    color: white;
+}
+
+
+
+/* ----------------------------- Plan-trip page > Main section ------------------------------- */
+
+.trains-result-container.quick-booking{
+    display: flex;
+    width: 1440px;
+    padding: 40px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* RWD */
