@@ -6,7 +6,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: "SF Pro Text";
+    /* font-family: "SF Pro Text"; */
 }
 
 /* ------------------------ header -------------------------- */
@@ -567,6 +567,11 @@ body{
     white-space: nowrap;
 }
 
+.read a{
+    text-decoration: none; 
+    color: #16181F;
+}
+
 
 .news-item2{
     display: flex;
@@ -662,7 +667,7 @@ body{
 }
 
 .footer-info {
-    max-width: 400px; /* 限制最大寬度，避免文字過長 */
+    width: 100%;
 }
 
 .footer-info h6 {
