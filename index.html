@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwan Railway @redesign</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -205,7 +206,7 @@
                 </div>
                 
                 <div class="train-number">
-                    <i class="fa-regular fa-square"></i>
+                    <input type="checkbox">
                     <span>已知列車車次</span>
                   </div>
               </div>
@@ -213,14 +214,42 @@
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label">出發</label>
-                  <input type="text" class="form-control" value="1020 - 板橋站" />
+                  <select class="dropdown-select">
+                    <option value="" disabled selected>1011 - 台北</option>
+                    <option>1001 - 基隆</option>
+                    <option>1002 - 三坑</option>
+                    <option>1003 - 八堵</option>
+                    <option>1004 - 七堵</option>
+                    <option>1005 - 百福</option>
+                    <option>1006 - 五堵</option>
+                    <option>1007 - 汐止</option>
+                    <option>1008 - 汐科</option>
+                    <option>1009 - 南港</option>
+                    <option>1010 - 松山</option>
+                    <option>1011 - 台北</option>
+                    <option>1012 - 萬華</option>
+                </select>
                 </div>
                 
                 <i class="fa-solid fa-right-left"></i>
         
                 <div class="form-group">
                   <label class="form-label">抵達</label>
-                  <input type="text" class="form-control" value="3300 - 臺中站" />
+                  <select class="dropdown-select">
+                    <option value="" disabled selected>1011 - 台北</option>
+                    <option>1001 - 基隆</option>
+                    <option>1002 - 三坑</option>
+                    <option>1003 - 八堵</option>
+                    <option>1004 - 七堵</option>
+                    <option>1005 - 百福</option>
+                    <option>1006 - 五堵</option>
+                    <option>1007 - 汐止</option>
+                    <option>1008 - 汐科</option>
+                    <option>1009 - 南港</option>
+                    <option>1010 - 松山</option>
+                    <option>1011 - 台北</option>
+                    <option>1012 - 萬華</option>
+                </select>
                 </div>
               </div>
         
@@ -237,7 +266,12 @@
         
                 <div class="form-group">
                   <label class="form-label">票種</label>
-                  <input type="text" class="form-control" value="全票, 1張" readonly />
+                  <select class="ticket-type">
+                    <option value="" disabled selected>請選擇</option>
+                    <option>全票</option>
+                    <option>優待票</option>
+                    <option>學生票</option>
+                </select>
                 </div>
               </div>
         
@@ -270,7 +304,7 @@
                     </div>
                     
                     <div class="train-number">
-                        <i class="fa-regular fa-square"></i>
+                        <input type="checkbox">
                         <span>已知列車車次</span>
                       </div>
                   </div>
@@ -278,14 +312,42 @@
                 <div class="form-row">
                   <div class="form-group">
                     <label class="form-label">出發</label>
-                    <input type="text" class="form-control" value="1020 - 板橋站" />
+                    <select class="dropdown-select">
+                        <option value="" disabled selected>1011 - 台北</option>
+                        <option>1001 - 基隆</option>
+                        <option>1002 - 三坑</option>
+                        <option>1003 - 八堵</option>
+                        <option>1004 - 七堵</option>
+                        <option>1005 - 百福</option>
+                        <option>1006 - 五堵</option>
+                        <option>1007 - 汐止</option>
+                        <option>1008 - 汐科</option>
+                        <option>1009 - 南港</option>
+                        <option>1010 - 松山</option>
+                        <option>1011 - 台北</option>
+                        <option>1012 - 萬華</option>
+                    </select>
                   </div>
                   
                   <i class="fa-solid fa-right-left"></i>
           
                   <div class="form-group">
                     <label class="form-label">抵達</label>
-                    <input type="text" class="form-control" value="3300 - 臺中站" />
+                    <select class="dropdown-select">
+                        <option value="" disabled selected>1011 - 台北</option>
+                        <option>1001 - 基隆</option>
+                        <option>1002 - 三坑</option>
+                        <option>1003 - 八堵</option>
+                        <option>1004 - 七堵</option>
+                        <option>1005 - 百福</option>
+                        <option>1006 - 五堵</option>
+                        <option>1007 - 汐止</option>
+                        <option>1008 - 汐科</option>
+                        <option>1009 - 南港</option>
+                        <option>1010 - 松山</option>
+                        <option>1011 - 台北</option>
+                        <option>1012 - 萬華</option>
+                    </select>
                   </div>
                 </div>
           
@@ -302,7 +364,12 @@
           
                   <div class="form-group">
                     <label class="form-label">票種</label>
-                    <input type="text" class="form-control" value="全票, 1張" readonly />
+                    <select class="ticket-type">
+                        <option value="" disabled selected>請選擇</option>
+                        <option>全票</option>
+                        <option>優待票</option>
+                        <option>學生票</option>
+                    </select>
                   </div>
                 </div>
           
@@ -359,7 +426,7 @@
                         <span class="date">2023/03/25</span>
                         <div class="news-content">
                             <h6>車廂寧靜宣導，共同維護乘車品質</h6>
-                        <div class="read-more">
+                        <div class="read">
                             <a href="">閱讀</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
@@ -370,7 +437,7 @@
                         <span class="date">2022/03/18</span>
                         <div class="news-content">
                             <h6>臺鐵緊急聯絡電話「1933」(僅限發現軌道、平交道、橋樑及隧道有障礙物通報專用)</h6>
-                        <div class="read-more">
+                        <div class="read">
                             <a href="">閱讀</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
@@ -388,7 +455,7 @@
                         <span class="date">2025/02/11</span>
                         <div class="news-content">
                             <h6>本公司第4次公開評選「屏東火車站東側新街段三小段3地號等24筆土地都市更新事業」都市更新事業實施者案第2次變更或補充公告。</h6>
-                        <div class="read-more">
+                        <div class="read">
                             <a href="">閱讀</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
@@ -399,7 +466,7 @@
                         <span class="date">2025/02/11</span>
                         <div class="news-content">
                             <h6>光聚千塘串桃園 臺鐵「桃喜便當-台式打拋豬」獻禮台灣燈會</h6>
-                        <div class="read-more">
+                        <div class="read">
                             <a href="">閱讀</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
@@ -410,7 +477,7 @@
                         <span class="date">2025/02/10</span>
                         <div class="news-content">
                             <h6>2025台灣燈會挺棒球愛台灣 臺鐵商品GO GO購！</h6>
-                        <div class="read-more">
+                        <div class="read">
                             <a href="">閱讀</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
@@ -422,7 +489,7 @@
                         <span class="date">2025/02/07</span>
                         <div class="news-content">
                             <h6>臺鐵全新郵輪列車 「嬉遊內灣 共下來尞」 888暢遊新竹竹東內灣</h6>
-                        <div class="read-more">
+                        <div class="read">
                             <a href="">閱讀</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
@@ -433,7 +500,7 @@
                         <span class="date">2025/02/07</span>
                         <div class="news-content">
                             <h6>「2025台灣燈會在桃園」活動 臺鐵公司加開列車</h6>
-                        <div class="read-more">
+                        <div class="read">
                             <a href="">閱讀</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
